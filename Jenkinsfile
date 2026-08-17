@@ -16,6 +16,7 @@ pipeline {
                     sh 'pip install --no-cache-dir -r requirements.txt || true'
                     echo '=== Running Python Application ==='
                     sh 'python main.py'
+                    echo 'login feature'
                 }
             }
         }
@@ -35,6 +36,7 @@ pipeline {
 
                     echo '=== Running Node.js Application'
                     sh 'npm run start'
+                    echo 'Login feature'
                 }
             }
         }
