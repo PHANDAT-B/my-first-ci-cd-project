@@ -4,7 +4,7 @@ pipeline {
         stage("Build and Test Python App") {
             agent {
                 docker {
-                    image "python:3.12.3-slima  "
+                    image "python:3.12.3-slim"
                 }
             }
             steps {
@@ -22,7 +22,7 @@ pipeline {
         stage("Build and Test Node.js App") {
             agent {
                 docker {
-                    image:node:22-alpine
+                    image 'node:22-alpine'
                 }
             }
             steps {
